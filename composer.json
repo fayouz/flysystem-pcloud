@@ -1,0 +1,43 @@
+{
+  "name": "fayouz/flysystem-pcloud",
+  "description": "Flysystem Adapter for pCloud",
+  "keywords": [
+    "fayouz",
+    "pcloud-api",
+    "pcloud",
+    "api",
+    "flysystem"
+  ],
+  "homepage": "https://github.com/fayouz/flysystem-pcloud",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Faez Bouloussa",
+      "email": "srmk@outlook.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "guzzlehttp/guzzle": "^6.2",
+    "league/flysystem": "~1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8|^5.7|^6.0|^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Fayouz\\PCloud\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Fayouz\\PCloud\\Test\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
